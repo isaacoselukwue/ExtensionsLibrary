@@ -3,7 +3,7 @@ using System.Text;
 
 namespace ExtensionsLibrary
 {
-    public class Random
+    public class RandomAlphaNumericGenerator
     {
         public static string RandomToken()
         {
@@ -20,7 +20,7 @@ namespace ExtensionsLibrary
         private static string GetUniqueKey(int size)
         {
             byte[] data = new byte[4 * size];
-            using (var crypto = RandomNumberGenerator.Create())
+            using (var crypto = System.Security.Cryptography.RandomNumberGenerator.Create())
             {
                 crypto.GetBytes(data);
             }
@@ -44,7 +44,7 @@ namespace ExtensionsLibrary
         private static string GetUniqueAlphaNumericKeys(int size)
         {
             byte[] data = new byte[4 * size];
-            using (var crypto = RandomNumberGenerator.Create())
+            using (var crypto = System.Security.Cryptography.RandomNumberGenerator.Create())
             {
                 crypto.GetBytes(data);
             }
