@@ -54,6 +54,20 @@ namespace ExtensionsLibrary.Utilities
             }
             return response;
         }
+        public static string FileToBase64(string filePath)
+        {
+            try
+            {
+                byte[] response = File.ReadAllBytes(filePath);
+                string image = Convert.ToBase64String(response);
+                return image;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }            
+        }
     }
     
 
