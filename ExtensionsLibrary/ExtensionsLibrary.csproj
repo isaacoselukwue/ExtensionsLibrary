@@ -5,12 +5,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <FileVersion>1.0.0</FileVersion>
+    <FileVersion>1.0.2</FileVersion>
     <PackageReleaseNotes>Based on .net6</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/isaacoselukwue/ExtensionsLibrary</RepositoryUrl>
     <PackageId>Ose.ExtensionsLibrary</PackageId>
-    <Version>1.0.0</Version>
+    <Version>1.0.2</Version>
     <Authors>Isaac Oselukwue</Authors>
     <Description>A nuget package packed with extension libraries for use.</Description>
     <PackageIcon>extensions.png</PackageIcon>
