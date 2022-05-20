@@ -25,7 +25,13 @@ namespace ExtensionsLibrary.Utilities
                 throw;
             }
         }
-
+        /// <summary>
+        /// This takes the file path and a guid for image/file Id and returns an object with the name properties, content type,
+        /// byte value, response which you could return as a blob url or just the byte as you see fit.
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <param name="Imageid"></param>
+        /// <returns></returns>
         public static ImageDownloadModels FileToByte(string fileName, Guid Imageid)
         {
             ImageDownloadModels response = new();
@@ -54,6 +60,11 @@ namespace ExtensionsLibrary.Utilities
             }
             return response;
         }
+        /// <summary>
+        /// This method takes the file path and returns the base 64 string value of that file.
+        /// </summary>
+        /// <param name="filePath"></param>
+        /// <returns></returns>
         public static string FileToBase64(string filePath)
         {
             try
@@ -64,7 +75,6 @@ namespace ExtensionsLibrary.Utilities
             }
             catch (Exception)
             {
-
                 throw;
             }            
         }

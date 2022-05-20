@@ -10,7 +10,7 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/isaacoselukwue/ExtensionsLibrary</RepositoryUrl>
     <PackageId>Ose.ExtensionsLibrary</PackageId>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Authors>Isaac Oselukwue</Authors>
     <Description>A nuget package packed with extension libraries for use.</Description>
     <PackageIcon>extensions.png</PackageIcon>

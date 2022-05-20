@@ -9,7 +9,7 @@ namespace ExtensionsLibrary
         /// This method returns a cryptographic 6-digit pseudo-random number for token validation.
         /// </summary>
         /// <returns></returns>
-        public static string RandomToken()
+        public static string GetToken()
         {
             //var CharCombination = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*_+~,./?|";
             //var random = new Random();
@@ -44,7 +44,7 @@ namespace ExtensionsLibrary
         /// </summary>
         /// <param name="number"></param>
         /// <returns></returns>
-        public static string GetAnyAmountOfToken(int number)
+        public static string GetToken(int number)
         {
             string authToken = GetUniqueKey(number);
             return authToken;
