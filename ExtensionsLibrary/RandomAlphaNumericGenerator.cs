@@ -5,6 +5,10 @@ namespace ExtensionsLibrary
 {
     public class RandomAlphaNumericGenerator
     {
+        /// <summary>
+        /// This method returns a cryptographic 6-digit pseudo-random number for token validation.
+        /// </summary>
+        /// <returns></returns>
         public static string RandomToken()
         {
             //var CharCombination = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*_+~,./?|";
@@ -35,7 +39,11 @@ namespace ExtensionsLibrary
 
             return result.ToString();
         }
-        //numbers
+        /// <summary>
+        /// This returns any length of number of cryptographically pseudo-random digits.
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public static string GetAnyAmountOfToken(int number)
         {
             string authToken = GetUniqueKey(number);
@@ -59,6 +67,11 @@ namespace ExtensionsLibrary
 
             return result.ToString();
         }
+        /// <summary>
+        /// This returns any number of cryptographically pseudo-random alphanumeric characters.
+        /// </summary>
+        /// <param name="size"></param>
+        /// <returns></returns>
         public static string GetAnyAmountOfTokensAlphaNumeric(int number)
         {
             string authToken = GetUniqueAlphaNumericKeys(number);
