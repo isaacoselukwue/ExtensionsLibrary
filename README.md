@@ -12,3 +12,6 @@ you just need to slap validation attribute: "[GuidValidator]" to use .Net middle
 The fileToBase64 streamer
 
 4. The GenerateRandomNtokens. It is a cryptographically pseudo-random generator I use for generating tokens, otp etc. Available with ascii and numeric.
+
+Interested in using the Library, head over to nuget via this link: https://www.nuget.org/packages/Ose.ExtensionsLibrary.
+Also via CLI: Install-Package Ose.ExtensionsLibrary -Version 1.0.4
